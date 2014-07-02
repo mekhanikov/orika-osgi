@@ -1,0 +1,15 @@
+Bundle-Version: 1.0.0.${tstamp}
+
+-buildpath:  \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation
+
+Include-Resource: lib
+Bundle-ClassPath: ., orika-core-1.4.5.jar
+	
+Export-Package:  \
+	ma.glasnost.orika.*
+	
+-runfw: org.apache.felix.framework;version='[4.2.1,4.2.1]'
+-runee: JavaSE-1.7

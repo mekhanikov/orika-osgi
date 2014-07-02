@@ -1,0 +1,22 @@
+Bundle-Version: 1.0.0.${tstamp}
+
+-runsystempackages: javax.inject
+
+-buildpath:  \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation
+
+Private-Package:  \
+	com.thoughtworks.paranamer
+	
+Include-Resource: lib
+Bundle-ClassPath: ., paranamer-2.6.jar
+
+Service-Component:  \
+	*
+	
+Export-Package:  \
+	com.thoughtworks.paranamer.*;version=2.6.0
+-runfw: org.apache.felix.framework;version='[4.2.1,4.2.1]'
+-runee: JavaSE-1.7
